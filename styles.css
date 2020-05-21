@@ -1,0 +1,379 @@
+*
+{
+        margin: 0;
+        padding: 0;
+}
+.topname
+{
+font-family: Bebas Neue Regular;
+font-size: 30pt;  
+font-weight: bold;
+color: white;
+width: 270px; 
+background: #b60306;
+border-radius: 5px;
+position: relative;
+margin: auto;
+margin-bottom: 30pt;
+padding: 0;
+top: 10px;
+text-align: center;
+z-index: 10;
+}
+.radio-1:hover, .radio-2:hover, .radio-3:hover, .radio-4:hover, .radio-5:hover
+{
+        transition: 0.5s;
+        background-color: transparent;
+}
+.radio-1, .radio-2, .radio-3, .radio-4, .radio-5
+{
+
+        font-family: Bebas Neue Regular;
+        font-size: 30pt;
+        color:white;
+        width: 250px;
+        background: #b60306;
+        border-radius: 5px;
+        position: relative;
+        margin: auto;
+        margin-bottom: 10pt;
+        padding: 0;
+        text-align: center;
+        cursor: pointer;
+        z-index: 10;
+        text-decoration: none;
+}
+body
+{
+background-image: url(backSUSHI.png);
+background-attachment: fixed;
+background-size: cover;
+}
+.burger-menu_button
+{       position: fixed;
+        left:50%;
+        margin-left: -240px;
+        top: 10px;
+        z-index: 40;
+        width: 48px;
+        height: 48px;
+        border-radius: 15%;
+        background-color: #b60306;
+        
+}
+.burger-menu_button:hover .burger-menu_lines
+{
+        filter: brightness(0.7);
+}
+.burger-menu_lines,
+.burger-menu_lines::after,
+.burger-menu_lines::before
+{
+        transition: 0.5s;
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 15px;
+}
+.burger-menu_lines 
+{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: transparent;
+}
+.burger-menu_lines::before
+{
+        content: '';
+        top: 0px;
+        transform: rotate(45deg);
+}
+.burger-menu_lines::after
+{
+        content: '';
+        top: 0px;
+        transform: rotate(-45deg);
+}
+.burger-menu_active .burger-menu_lines
+{
+        background-color: #fff;
+}
+.burger-menu_active .burger-menu_lines::before
+{
+        transform: rotate(0deg);
+        top: -12px;
+}
+.burger-menu_active .burger-menu_lines::after
+{
+        transform: rotate(0deg);
+        top: 12px;
+}
+.burger-menu_nav
+{
+        top: 0;
+        padding-top: 70px;
+        position: fixed;
+        z-index: 30;
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(to top,#850002, #b60306);
+        /*background-color: #850002;*/
+        overflow-y: auto;
+        left: 0;
+        transition: 0.5s;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.burger-menu_active .burger-menu_nav
+{
+        
+        left: -100%;
+}
+.burger-menu_link
+{       
+        padding: 10px;
+        font-family: Bebas Neue Regular;
+        font-size: 32px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: bold;
+        color: #fff;
+}
+.burger-menu_link:hover
+{
+        background-color: black;
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+        transition: 0.5s;
+}
+.burger-menu_overlay
+{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 20;
+}
+.burger-menu_active .burger-menu_overlay;
+{
+        display: block;
+        background-color: rgba(0, 0, 0, 1);
+}
+.date, .time, .tablelines, .weekdays, .buttons,
+.buttons2, .buttons3, .buttons4, .buttons5, .buttons6,
+.buttons7, .loginpage, .regpage, .radiobuttons
+{
+        font-size: 28pt;
+        color:white;
+        font-weight: bold;
+        font-family: Bebas Neue Regular;
+        text-shadow: #000 2px 0px 2px, #000 0px 2px 2px, #000 0px -2px 2px, #000 -2px 0px 2px;
+}  
+.date
+{       
+        width: 350px;
+        border-radius: 5px;
+        position: relative;
+        margin: auto;
+        margin-bottom: 10pt;
+        padding: 0;
+        text-align: center;
+}
+.time
+{
+        width: 250px;
+        position: relative;
+        left:50%;
+        margin-left: -30px;
+        padding: 0;
+        word-spacing: 80px
+        /*background-color: #fff;*/
+}
+.tablelines
+{       
+        position: absolute;
+        left: -15%;
+        right: 0;
+        margin: 0 auto;
+        width: 400px;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 15px;
+}
+.weekdays
+{
+        width: 30px;
+        position: relative;
+        left:40%;
+        margin-left: -130px;
+        padding: 0;
+        padding-top: 80px;
+        padding-bottom: 70px;
+        /*background-color: #fff;*/
+}
+.table
+{
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 300px;
+        height: 1000px;
+        /*background-color: #fff;*/
+}
+.buttons, .buttons2, .buttons3, .buttons4, .buttons5, .buttons6, .buttons7
+{
+         height: 180px;
+         position: absolute;
+         left: 38%;
+         top: 1%;
+         margin-left: -35px;
+         /*background-color: #fff;*/
+         width: 180px;
+}
+.buttons2
+{
+         top: 20%;
+}
+.buttons3
+{
+         top: 40%;
+}
+.buttons4
+{
+         top: 59%;
+}
+.buttons5
+{
+         top: 79%;
+ }
+.buttons6
+{
+         top: 98%;
+}
+.buttons7
+{
+         top: 118%;
+         /*color: #fff;*/
+         width: 180px;
+}
+.button1-1, .button1-2, .button1-3, .button1-4, .button1-5, 
+.button2-1, .button2-2, .button2-3, .button2-4, .button2-5,
+.button3-1, .button3-2, .button3-3, .button3-4, .button3-5, 
+.button4-1, .button4-2, .button4-3, .button4-4, .button4-5,
+.button5-1, .button5-2, .button5-3, .button5-4, .button5-5,
+.button6-1, .button6-2, .button6-3, .button6-4, .button6-5,
+.button7-1, .button7-2, .button7-3, .button7-4, .button7-5
+{       
+        font-size: 30px;
+        width: 140px;
+        height: 40px;
+        margin-bottom: 5px;
+        /*background-color: #32CD32;*/
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+}
+.button1-5, .button2-5, .button3-5, .button4-5, .button5-5, .button6-5, .button7-5
+{
+         position: absolute;
+         left: 80%;
+         top: 60px;
+}
+
+
+/*.button1-1:hover, .button1-2:hover, .button1-3:hover, .button1-4:hover, .button1-5:hover,
+.button2-1:hover, .button2-2:hover, .button2-3:hover, .button2-4:hover, .button2-5:hover,
+.button3-1:hover, .button3-2:hover, .button3-3:hover, .button3-4:hover, .button3-5:hover,
+.button4-1:hover, .button4-2:hover, .button4-3:hover, .button4-4:hover, .button4-5:hover,
+.button5-1:hover, .button5-2:hover, .button5-3:hover, .button5-4:hover, .button5-5:hover,
+.button6-1:hover, .button6-2:hover, .button6-3:hover, .button6-4:hover, .button6-5:hover,
+.button7-1:hover, .button7-2:hover, .button7-3:hover, .button7-4:hover, .button7-5:hover
+{
+        transition: 0.5s;
+        background-color: transparent;
+}*/
+.enterblock
+{
+        position: absolute;
+        left: 40%;
+        top: 40%;
+        margin: 0 auto;
+}
+.loginpage
+{
+        position: relative;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+}
+.informlogin
+{
+        border-radius: 20px;
+        height: 40px;
+        font-family: Corbel;
+        font-size: 20pt;
+        /*font-weight: bold;*/
+        width: 400px;
+        text-align: center;
+
+}
+.enterbutton
+{
+        position: relative;
+        left: 24%;
+        width: 200px;
+        height: 45px;
+        background-color: grey;
+        text-align: center;
+        border-radius: 20px;
+}
+.informreg
+{       
+        position: relative;
+        top: -100px;
+        border-radius: 20px;
+        height: 40px;
+        font-family: Corbel;
+        font-size: 20pt;
+        width: 400px;
+        text-align: center;
+        margin-top: 30px;
+
+}
+.regpage
+{
+        position: relative;
+        text-align: center;
+        width: 500px;
+        top: -100px;
+        left: -45px;
+        font-weight: bold;
+        /*background-color: yellow;*/
+
+}
+.enterregbutton
+{
+        position: relative;
+        left: 25px;
+        width: 350px;
+        height: 45px;
+        top: -50px;
+        background-color: grey;
+        text-align: center;
+        border-radius: 20px;
+}
+.radiobuttons
+{
+        margin-top: 20px;
+        position: relative;
+        top: -70px;
+        left: 80%;
+        transform:scale(2);
+        font-size: 15px;
+
+}

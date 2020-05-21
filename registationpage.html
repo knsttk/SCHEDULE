@@ -1,0 +1,26 @@
+<DOCTYPE html>
+<html>
+    <head>
+    <link href="styles.css" rel="stylesheet">
+    
+    <title>Registation</title>
+    <meta charset = "utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- <meta http-equiv="Refresh" content="10" /> -->
+    </head>
+
+    <body>
+        <p class="topname">SCHEDULE APP</p>
+    <form action="handler.php" class="enterblock">
+       <div class="regpage">Зарегистрировать нового пользователя</div>
+        <div><input maxlength="25" size="40" name="login" class="informreg" placeholder="Никнейм"></div>
+        <div><input type="password" maxlength="25" size="20" name="password" class="informreg" placeholder="Пароль"></div>
+        <div><input type="password" maxlength="25" size="20" name="password" class="informreg" placeholder="Повторите пароль"></div> 
+        <div><input maxlength="25" size="40" name="login" class="informreg" placeholder="Фамилия Имя"></div>
+        <div class="radiobuttons"><input type="radio" id="radioButton" value="admin" name="role">Админ</div>
+        <div class="radiobuttons"><input type="radio" id="radioButton" value="courier" name="role">Курьер</div>
+        <div class="loginpage enterregbutton">Зарегистрироваться</div>
+      </form>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>
